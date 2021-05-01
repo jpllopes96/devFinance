@@ -18,7 +18,7 @@ const modal = {
     }
  }
 
-
+//Salvar no localstorage do navegador
  const Storage = {  
     get(){
         return JSON.parse(localStorage.getItem("dev.finances:transactions")) || [];
@@ -137,9 +137,9 @@ const Utils = {
 
     },
     formatAmount(value){
-        //value = Number(value.replace(/\,\./g, ""))*100;
+        //value = Number(value.replace(/\,?\.?/g, ""))*100;
         value= Number(value)*100;
-        return value;
+        return Math.round(value);
     },
     formatDate(date){
         const splittedDate= date.split("-");
@@ -202,8 +202,6 @@ const Form = {
         }
     }
 }
-
-//Salvar no localstorage do navedor
 
 const App = {
     init(){
