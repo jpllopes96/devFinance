@@ -1,5 +1,5 @@
 <h1 align="center">
-  ##💻 Dev.finance$
+  💻 Dev.finance$
 </h1>
 
 <p align="center">
