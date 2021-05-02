@@ -223,6 +223,21 @@ td.expense{
 #form h2{
     margin-top: 0;
 }
+.alert-form{
+    background: #F8D7DA;
+   
+    padding: 0.8rem 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25rem;
+    color: #974F56;
+    font-weight: 700;
+    display: none;
+}
+.alert-form.active{
+    display: flex;
+}
+
 #form form input{
     border: none;
     border-radius: 0.2rem;

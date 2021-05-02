@@ -192,13 +192,20 @@ const Form = {
         event.preventDefault()
 
         try {
+            document
+            .querySelector('.alert-form')
+            .classList
+            .remove('active'); 
             Form.validateFields()
             const transaction = Form.formatValues()
             Transactions.add(transaction)
             Form.clearFields()
             modal.close()
         } catch (error) {
-            alert(error.message)
+            document
+            .querySelector('.alert-form')
+            .classList
+            .add('active'); 
         }
     }
 }
